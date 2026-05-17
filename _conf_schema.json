@@ -1,0 +1,41 @@
+{
+  "website_base_url": {
+    "description": "MC 服务器官网 API 基地址",
+    "type": "string",
+    "default": "https://your-mc-server.com",
+    "hint": "以 https:// 开头，结尾不要带斜杠，例如 https://mc.example.com"
+  },
+  "admin_qq_list": {
+    "description": "插件管理员 QQ 列表",
+    "type": "list",
+    "default": [],
+    "hint": "QQ 号字符串列表，拥有礼包记录、统计、重载配置等管理员指令权限"
+  },
+  "gift_config": {
+    "description": "等级礼包配置列表",
+    "type": "list",
+    "default": [
+      {
+        "gift_id": "newbie",
+        "name": "新手礼包",
+        "min_level": 5,
+        "items": [
+          {"id": "minecraft:diamond", "count": 5, "nbt": ""},
+          {"id": "minecraft:iron_ingot", "count": 16, "nbt": ""}
+        ],
+        "cooldown_days": 0
+      },
+      {
+        "gift_id": "advanced",
+        "name": "进阶礼包",
+        "min_level": 10,
+        "items": [
+          {"id": "minecraft:emerald", "count": 16, "nbt": ""},
+          {"id": "minecraft:experience_bottle", "count": 32, "nbt": ""}
+        ],
+        "cooldown_days": 0
+      }
+    ],
+    "hint": "每个礼包包含 gift_id（唯一标识）、name（名称）、min_level（最低群等级）、items（MC 物品列表）、cooldown_days（冷却天数，0 表示一次性）"
+  }
+}

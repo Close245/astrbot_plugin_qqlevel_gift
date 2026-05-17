@@ -1,0 +1,19 @@
+{
+  "plugin_name": "MC 群等级礼包助手",
+  "plugin_desc": "连接 Minecraft 服务器官网与 QQ 群，基于 QQ 群成员等级自动发放游戏内礼包。",
+  "cmd_check_level": "查等级",
+  "cmd_check_bind": "绑定查询",
+  "cmd_claim_gift": "领礼包",
+  "cmd_claim_gift_alias": "领等级礼包",
+  "cmd_gift_record": "礼包记录",
+  "cmd_gift_stats": "礼包统计",
+  "cmd_reload_config": "重载礼包配置",
+  "msg_no_group": "该指令只能在群聊中使用。",
+  "msg_no_member_info": "无法获取群成员信息，请检查机器人是否为管理员且权限正常。",
+  "msg_not_bound": "你还未绑定游戏账号，请前往官网注册并填写 QQ 号：{url}",
+  "msg_no_gift": "你当前的群等级为 Lv.{level}，暂无可领取的礼包。",
+  "msg_no_permission": "你没有权限使用此指令。",
+  "msg_no_records": "QQ {qq} 暂无礼包领取记录。",
+  "msg_no_stats": "暂无礼包领取记录。",
+  "msg_service_unavailable": "官网服务暂时不可用，请稍后重试。"
+}
